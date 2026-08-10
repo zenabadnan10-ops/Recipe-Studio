@@ -4,10 +4,116 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="icon" type="image/png" href="/Gemini_Generated_Image_rf5t81rf5t81rf5t-removebg-preview.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Studio</title>
   </head>
   <body>
+    <header>
+      <nav aria-label="Main navigation">
+        <div id="logo-title">
+          <img id="logo" src="/Gemini_Generated_Image_rf5t81rf5t81rf5t-removebg-preview.png" alt="website logo">
+          <h1 id="title">
+            Recipe Studio
+          </h1>
+        </div>
+        <div id="nav-btns">
+          <button id="show-all-btn">All Recipes</button>
+          <button id="favorite-btn">Favorites</button>
+          <button id="add-btn">Add Recipe</button>
+        </div>
+      </nav>
+      <section id="main-page" aria-labelledby="recipes-main-page">
+        <div id="hero-text">
+          <h1 id="motto">
+            YOUR RECIPES, YOUR KITCHEN
+          </h1>
+          <h2 id="desc">
+            Organize all your favorite recipes in one place
+          </h2>
+        </div>
+        <div id="search-filter">
+          <div id="input-icon">
+            <img src="./src/assets/images/search.png" id="search-icon" alt="search icon">
+            <input type="search" id="search-input" placeholder="Search recipes..." aria-label="Search recipes">
+          </div>
+          <div id="filter-reset">
+            <label for="filter">Filter</label>
+            <select id="filter" name="filter-dropdown">
+              <option value="all">All Recipes</option> 
+              <option value="breakfast">Breakfast</option> 
+              <option value="lunch">Lunch</option> 
+              <option value="dinner">Dinner</option> 
+              <option value="dessert">Dessert</option> 
+              <option value="snack">Snacks</option> 
+              <option value="drink">Drinks</option> 
+            </select>
+            <button id="reset-filter">
+              Reset Filter
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section id="recipes">
+        <h1 id="my-recipes">
+          My Recipes
+        </h1>
+        <p class="no-recipes">
+          No recipes yet
+        </p>
+        <p class="no-recipes">
+          Add your first recipe to get started
+        </p>
+        <button class="no-recipes">
+          Add First Recipe
+        </button>
+        <div id="recipe-grid"></div>
+      </section>
+      <form id="add-form">
+        <label for="recipe-name">Recipe Name</label>
+        <input type="text" id="recipe-name" name="name" placeholder="e.g. Pasta" required>
+        <label for="recipe-img">Image URL</label>
+        <input type="url" id="recipe-img" name="image">
+        <label for="recipe-desc">Description</label>
+        <textarea id="recipe-desc" name="desc"></textarea>
+        <label for="recipe-category">Category</label>
+        <select id="recipe-category" required name="category">
+          <option value="">Choose Category</option> 
+          <option value="breakfast">Breakfast</option> 
+          <option value="lunch">Lunch</option> 
+          <option value="dinner">Dinner</option> 
+          <option value="dessert">Dessert</option> 
+          <option value="snack">Snack</option> 
+          <option value="drink">Drink</option> 
+        </select>
+        <label for="recipe-time">Preparation Time</label>
+        <input type="number" id="recipe-time" min="0" name="time" placeholder="e.g. 35">
+        <label for="servings">Servings</label>
+        <input id="servings" min="1" name="servings" placeholder="e.g. 1">
+        <label for="recipe-ingredients">Ingredients</label>
+        <textarea id="recipe-ingredients" name="ingredients" placeholder="Enter one ingredient per line" required></textarea>
+        <label for="recipe-instructions">Instructions</label>
+        <textarea id="recipe-instructions" required placeholder="Enter one step per line" name="instructions"></textarea>
+        <button id="form-add-btn">Save Recipe</button>
+        <button id="cancel-btn">Cancel</button>
+      </form>
+    </main>
+    <footer>
+      <p id="footer-title">
+        Recipe Studio
+      </p>
+      <p id="footer-text">
+        Built with HTML, CSS & JavaScript
+      </p>
+      <a href="https://github.com/zenabadnan10-ops/Recipe-Studio" id="github-link">
+        GitHub
+      </a>
+      <p id="end-text">
+        © 2026 Zenab Adnan
+      </p>
+    </footer>
     <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
