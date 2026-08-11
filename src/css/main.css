@@ -1,0 +1,244 @@
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+#main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#input-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#search-icon {
+    height: 30px;
+    width: 100%;
+    border: 2px solid var(--primary-color);
+    margin-right: -1px;
+    padding: 4px;
+    border-radius: var(--small-radius);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    cursor: pointer;
+    transition: opacity var(--normal-transition);
+}
+
+#search-input {
+    padding: 5px 15px;
+    padding-right: 500px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--small-radius);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+#search-icon:hover {
+    opacity: 70%;
+}
+
+#search-icon:active {
+    opacity: 100%;
+}
+
+#search-input:hover {
+    cursor: text;
+}
+
+#search-input:focus {
+    border: 2px solid var(--primary-color);
+    border-radius: var(--small-radius);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#reset-filter {
+    background-color: var(--primary-color);
+    color: var(--card-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--large-radius);
+    transition: transform var(--normal-transition), background-color var(--normal-transition);
+    cursor: pointer;
+}
+
+#reset-filter:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+#reset-filter:active {
+    background-color: #ce1354;
+    transform: translateY(2px);
+}
+
+#filter-reset {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+label[for="filter"] {
+    font-size: var(--large-text);
+}
+
+#filter {
+    padding: 5px 20px;
+    font-size: var(--body-text);
+    text-align: center;
+    border-radius: var(--small-radius);
+}
+
+#recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#filter-type {
+    font-size: var(--h1);
+    color: var(--body-text-color);
+}
+
+.no-recipes {
+    font-size: var(--large-text);
+}
+
+#add-btn {
+    background-color: var(--primary-color);
+    color: var(--card-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--large-radius);
+    transition: transform var(--normal-transition), background-color var(--normal-transition);
+    cursor: pointer;
+}
+
+#add-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+#add-btn:active {
+    background-color: #ce1354;
+    transform: translateY(2px);
+}
+
+#recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 650px;
+    border: 5px solid var(--border-color);
+    border-radius: var(--large-radius);
+    padding: 40px 50px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+#form-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    padding-top: 10px;
+    padding-left: 35px;
+}
+
+#form-add-btn {
+    background-color: rgb(0, 181, 0);
+    color: var(--card-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--large-radius);
+    transition: transform var(--normal-transition), background-color var(--normal-transition);
+    cursor: pointer;
+}
+
+#form-add-btn:hover {
+    background-color: rgb(1, 218, 1);
+    transform: translateY(-2px);
+}
+
+#form-add-btn:active {
+    background-color: green;
+    transform: translateY(2px);
+}
+
+#cancel-btn {
+    background-color: red;
+    color: var(--card-color);
+    border: none;
+    padding: 10px 35px;
+    border-radius: var(--large-radius);
+    transition: transform var(--normal-transition), background-color var(--normal-transition);
+    cursor: pointer;
+}
+
+#cancel-btn:hover {
+    background-color: rgb(255, 62, 62);
+    transform: translateY(-2px);
+}
+
+#cancel-btn:active {
+    background-color: rgb(201, 1, 1);
+    transform: translateY(2px);
+}
+
+#add-form label {
+    margin-bottom: -15px;
+    font-size: var(--body-text);
+}
+
+#add-form input {
+    cursor: text;
+}
+
+#add-form input[type="text"], #add-form input[type="url"] {
+    padding: 5px 10px;
+}
+
+#add-form textarea {
+    padding: 15px 5px;
+    padding-top: 5px;
+    cursor: text;
+}
+
+#add-form input[type="number"] {
+    padding: 5px 10px;
+}
+
+#recipe-category {
+    padding: 5px 20px;
+    font-size: var(--body-text);
+    text-align: center;
+}
+
+input:not(:placeholder-shown):invalid, textarea:not(:placeholder-shown):invalid {
+    border: 2px solid red;
+    border-radius: 4px;
+}
