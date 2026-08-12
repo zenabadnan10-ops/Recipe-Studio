@@ -121,6 +121,10 @@ label[for="filter"] {
     font-size: var(--large-text);
 }
 
+.no-favs {
+    font-size: var(--large-text);
+}
+
 #add-btn {
     background-color: var(--primary-color);
     color: var(--card-color);

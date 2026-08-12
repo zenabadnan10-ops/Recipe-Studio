@@ -5,10 +5,13 @@ const viewDialog = document.getElementById("view-recipe-dialog");
 
 const deleteRecipe = (id) => {
     let recipes = JSON.parse(localStorage.getItem("recipes")) || [];
+    let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
     recipes = recipes.filter(recipe => Number(recipe.id) !== Number(id));
+    favorites = favorites.filter(recipe => Number(recipe.id) !== Number(id));
 
     localStorage.setItem("recipes", JSON.stringify(recipes));
+    localStorage.setItem("favorites", JSON.stringify(favorites));
     renderRecipes();
 }
 

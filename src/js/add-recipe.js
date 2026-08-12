@@ -9,9 +9,13 @@ const updateNoRecipesUI = (hasRecipes) => {
     noRecipesElements.forEach((element) => {
         element.style.display = hasRecipes ? "none" : "";
     });
+    const nofavsElements = document.querySelectorAll(".no-favs");
+    nofavsElements.forEach((element) => {
+        element.style.display = "none";
+    });
 };
 
-const createCard = (el) => {
+export const createCard = (el) => {
     const article = document.createElement("article");
     article.className = "recipe-card";
     
