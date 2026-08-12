@@ -161,11 +161,13 @@
     background-color: var(--primary-color);
     color: var(--card-color);
     border: none;
-    padding: 10px 100px;
+    padding: 15px 100px;
     border-radius: var(--large-radius);
     transition: transform var(--normal-transition), background-color var(--normal-transition);
     cursor: pointer;
     margin-left: 28px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 #edit-recipe-btn:hover {
@@ -179,10 +181,12 @@
 }
 
 #delete-recipe-btn {
+    margin-top: 10px;
+    margin-bottom: 40px;
     background-color: red;
     color: var(--card-color);
     border: none;
-    padding: 10px 100px;
+    padding: 15px 100px;
     margin-left: 20px;
     border-radius: var(--large-radius);
     transition: transform var(--normal-transition), background-color var(--normal-transition);
