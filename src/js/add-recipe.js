@@ -32,7 +32,7 @@ const createCard = (el) => {
             <img src="./src/assets/images/tray.png" alt="tray icon" class="tray-icon">
             <span class="recipe-card-category">${el.category}</span>
         </div>
-        <button class="recipe-card-btn">VIEW RECIPE</button>
+        <button class="recipe-card-btn" data-id="${el.id}">VIEW RECIPE</button>
     `;
 
     return article;
