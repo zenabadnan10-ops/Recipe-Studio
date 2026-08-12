@@ -223,7 +223,7 @@ label[for="filter"] {
     color: gray;
 }
 
-.clock-icon, .user-icon, .tray-icon {
+.user-icon, .tray-icon {
     opacity: 70%;
     width: 15px;
     height: 15px;

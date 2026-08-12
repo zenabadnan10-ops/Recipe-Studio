@@ -107,6 +107,30 @@
           </div>
         </form>
       </dialog>
+      <dialog id="view-recipe-dialog">
+        <div id="dialog-image-div">
+          <img id="dialog-image" alt="recipe image">
+          <button type="button" id="cross-emoji">X</button>
+        </div>
+        <div id="dialog-desc-div">
+          <img src="./src/assets/images/heart.png" alt="heart icon" id="dialog-recipe-heart">
+          <h3 id="dialog-recipe-name"></h3>
+          <h3 id="dialog-recipe-desc-heading">Description</h3>
+          <p id="dialog-recipe-desc"></p>
+          <div id="dialog-icons">
+            <img src="./src/assets/images/user.png" alt="user icon" id="user-icon">
+            <span id="dialog-recipe-serving"></span>
+            <img src="./src/assets/images/tray.png" alt="tray icon" id="tray-icon">
+            <span id="dialog-recipe-category"></span>
+          </div>
+          <h3 id="dialog-recipe-ingredient-heading">Ingredients</h3>
+          <ul id="dialog-recipe-ingredient-list"></ul>
+          <h3 id="dialog-recipe-instructions-heading">Instructions</h3>
+          <ol id="dialog-recipe-instructions-list"></ol>
+          <button id="edit-recipe-btn">Edit</button>
+          <button id="delete-recipe-btn">Delete</button>
+        </div>
+      </dialog>
     </main>
     <footer>
       <p id="footer-title">

@@ -1,0 +1,200 @@
+#view-recipe-dialog {
+    width: min(90%, 1200px);
+    border: none;
+    border-radius: 16px;
+    max-height: 90vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#view-recipe-dialog[open] {
+    display: flex;
+    flex-direction: row;
+}
+
+#view-recipe-dialog::backdrop {
+    background: rgb(0 0 0 / 50%);
+}
+
+#dialog-image-div {
+  position: relative;
+  width: 50%;
+}
+
+#dialog-image {
+  height: 90vh;
+  width: 100%;
+  display: block;
+  opacity: 95%;
+}
+
+#cross-emoji {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transition: background var(--normal-transition), transform var(--normal-transition);
+  z-index: 100;
+}
+
+#cross-emoji:hover {
+    background: rgba(207, 206, 206, 0.85);
+    transform: translateY(-2px);
+}
+
+#cross-emoji:active {
+    transform: translateY(2px);
+    background: white;
+}
+
+#dialog-desc-div {
+    width: 50%;
+}
+
+#dialog-recipe-heart {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform var(--normal-transition), opacity var(--normal-transition);
+}
+
+#dialog-recipe-heart:hover {
+    opacity: 90%;
+    transform: translateY(-2px);
+}
+
+#dialog-recipe-heart:active {
+    transform: translateY(2px);
+    opacity: 100%;
+}
+
+#dialog-recipe-name {
+    color: rgb(41, 40, 40);
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: var(--h1);
+}
+
+#dialog-recipe-desc-heading {
+    color: rgb(41, 40, 40);
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: var(--large-text);
+}
+
+#dialog-recipe-desc {
+    color: rgb(44, 43, 43);
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: var(--small-text);
+}
+
+#dialog-icons {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    gap: 15px;
+    font-size: var(--small-text);
+    padding-bottom: 20px;
+    color: gray;
+}
+
+#user-icon, #tray-icon {
+    opacity: 70%;
+    width: 15px;
+    height: 15px;
+    margin-right: -10px;
+}
+
+#dialog-recipe-ingredient-heading {
+    color: rgb(41, 40, 40);
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: var(--large-text);
+}
+
+#dialog-recipe-instructions-heading {
+    color: rgb(41, 40, 40);
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: var(--large-text);
+}
+
+#dialog-recipe-ingredient-list {
+    list-style-type: disc; 
+    padding-left: 45px; 
+    padding-bottom: 20px;
+}
+
+#dialog-recipe-instructions-list {
+    list-style-type: decimal; 
+    padding-left: 48px;    
+    padding-bottom: 20px;
+}
+
+#dialog-recipe-ingredient-list li,
+#dialog-recipe-instructions-list li {
+    margin-bottom: 0.4rem;
+}
+
+#edit-recipe-btn {
+    background-color: var(--primary-color);
+    color: var(--card-color);
+    border: none;
+    padding: 10px 100px;
+    border-radius: var(--large-radius);
+    transition: transform var(--normal-transition), background-color var(--normal-transition);
+    cursor: pointer;
+    margin-left: 28px;
+}
+
+#edit-recipe-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+#edit-recipe-btn:active {
+    background-color: #ce1354;
+    transform: translateY(2px);
+}
+
+#delete-recipe-btn {
+    background-color: red;
+    color: var(--card-color);
+    border: none;
+    padding: 10px 100px;
+    margin-left: 20px;
+    border-radius: var(--large-radius);
+    transition: transform var(--normal-transition), background-color var(--normal-transition);
+    cursor: pointer;
+}
+
+#delete-recipe-btn:hover {
+    background-color: rgb(255, 62, 62);
+    transform: translateY(-2px);
+}
+
+#delete-recipe-btn:active {
+    background-color: rgb(201, 1, 1);
+    transform: translateY(2px);
+}
