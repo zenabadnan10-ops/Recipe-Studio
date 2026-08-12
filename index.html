@@ -20,7 +20,7 @@
           </h1>
         </div>
         <div id="nav-btns">
-          <button class="nav-btn">+ Add Recipe</button>
+          <button class="nav-btn" id="add-recipe-btn">+ Add Recipe</button>
           <button class="nav-btn">🖤Favorites</button>
           <button class="nav-btn">All Recipes</button>
         </div>
@@ -62,36 +62,51 @@
         <button class="no-recipes" id="add-btn">
           Add First Recipe
         </button>
-        <div id="recipe-grid"></div>
+        <div id="recipe-grid">
+        </div>
       </section>
-      <div id="recipe-dialog">
+      <dialog id="recipe-dialog">
         <form id="add-form">
-          <label for="recipe-name">Recipe Name</label>
-          <input type="text" id="recipe-name" name="name" placeholder="e.g. Pasta" required>
-          <label for="recipe-img">Image URL</label>
-          <input type="url" id="recipe-img" name="image">
+          <div id="name-url">
+            <div id="name-div">
+              <label for="recipe-name">Recipe Name</label>
+              <input type="text" id="recipe-name" name="name" placeholder="e.g. Pasta" required>
+            </div>
+            <div id="url-div">
+              <label for="recipe-img">Image URL</label>
+              <input type="url" id="recipe-img" name="image">
+            </div>
+          </div>
           <label for="recipe-desc">Description</label>
           <textarea id="recipe-desc" name="desc" placeholder="Add description..."></textarea>
-          <label for="recipe-category">Category</label>
-          <select id="recipe-category" required name="category">
-            <option value="">Choose Category</option> 
-            <option value="breakfast">Breakfast</option> 
-            <option value="lunch">Lunch</option> 
-            <option value="dinner">Dinner</option> 
-            <option value="dessert">Dessert</option> 
-            <option value="snack">Snack</option> 
-            <option value="drink">Drink</option> 
-          </select>
-          <label for="servings">Servings</label>
-          <input id="servings" min="1" name="servings" placeholder="e.g. 1" type="number">
+          <div id="serving-category">
+            <div id="serving-div">
+              <label for="servings">Servings</label>
+              <input id="servings" min="1" name="servings" placeholder="e.g. 1" type="number">
+            </div>
+            <div id="category-div">
+              <label for="recipe-category">Category</label>
+              <select id="recipe-category" required name="category">
+                <option value="">Choose Category</option> 
+                <option value="breakfast">Breakfast</option> 
+                <option value="lunch">Lunch</option> 
+                <option value="dinner">Dinner</option> 
+                <option value="dessert">Dessert</option> 
+                <option value="snack">Snack</option> 
+                <option value="drink">Drink</option> 
+              </select>
+            </div>
+          </div>
           <label for="recipe-ingredients">Ingredients</label>
           <textarea id="recipe-ingredients" name="ingredients" placeholder="Enter one ingredient per line..." required></textarea>
+          <label for="recipe-instructions">Instructions</label>
+          <textarea id="recipe-instructions" name="instructions" placeholder="Enter one instruction per line..." required></textarea>
           <div id="form-btns">
             <button id="form-add-btn">Save Recipe</button>
             <button id="cancel-btn">Cancel</button>
           </div>
         </form>
-      </div>
+      </dialog>
     </main>
     <footer>
       <p id="footer-title">
