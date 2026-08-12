@@ -64,6 +64,7 @@
 
 #dialog-desc-div {
     width: 50%;
+    max-width: 100%;
 }
 
 #dialog-recipe-heart {
@@ -106,6 +107,7 @@
     color: rgb(44, 43, 43);
     padding-left: 30px;
     padding-bottom: 20px;
+    padding-right: 30px;
     font-size: var(--small-text);
 }
 
@@ -161,11 +163,13 @@
     background-color: var(--primary-color);
     color: var(--card-color);
     border: none;
-    padding: 10px 100px;
+    padding: 15px 100px;
     border-radius: var(--large-radius);
     transition: transform var(--normal-transition), background-color var(--normal-transition);
     cursor: pointer;
     margin-left: 28px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
 
 #edit-recipe-btn:hover {
@@ -179,10 +183,12 @@
 }
 
 #delete-recipe-btn {
+    margin-top: 10px;
+    margin-bottom: 40px;
     background-color: red;
     color: var(--card-color);
     border: none;
-    padding: 10px 100px;
+    padding: 15px 100px;
     margin-left: 20px;
     border-radius: var(--large-radius);
     transition: transform var(--normal-transition), background-color var(--normal-transition);
@@ -197,4 +203,10 @@
 #delete-recipe-btn:active {
     background-color: rgb(201, 1, 1);
     transform: translateY(2px);
+}
+
+#dialog-recipe-desc {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
 }

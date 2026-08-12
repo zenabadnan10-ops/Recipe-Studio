@@ -119,7 +119,10 @@ label[for="filter"] {
 
 .no-recipes {
     font-size: var(--large-text);
-    display: none;
+}
+
+.no-favs {
+    font-size: var(--large-text);
 }
 
 #add-btn {
