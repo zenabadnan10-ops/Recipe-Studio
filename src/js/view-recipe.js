@@ -2,6 +2,7 @@ const viewDialog = document.getElementById("view-recipe-dialog");
 const closeView = document.getElementById("cross-emoji");
 const recipeGrid = document.getElementById("recipe-grid");
 const editBtn = document.getElementById("edit-recipe-btn");
+const deleteBtn = document.getElementById("delete-recipe-btn");
 
 const DEFAULT_IMG = "https://www.bing.com/th/id/OIP.pQDb49sa3kzRGxV_FYQJjQHaE8?w=193&h=135&c=8&rs=1&qlt=90&r=0&o=6&dpr=1.5&pid=ImgAns&rm=2";
 
@@ -11,6 +12,7 @@ const showRecipeDialog = (id) => {
     if (!recipe) return;
 
     if (editBtn) editBtn.dataset.id = recipe.id;
+    if (deleteBtn) deleteBtn.dataset.id = recipe.id;
 
     document.getElementById("dialog-image").src = recipe.url || DEFAULT_IMG;
     document.getElementById("dialog-recipe-name").textContent = recipe.name;

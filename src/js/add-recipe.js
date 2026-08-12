@@ -1,5 +1,3 @@
-import { openAddModal } from "./edit-recipe.js";
-
 const recipeGrid = document.getElementById("recipe-grid");
 const recipeDialog = document.getElementById("recipe-dialog");
 const recipeForm = document.getElementById("add-form");
@@ -25,7 +23,6 @@ const createCard = (el) => {
             <img src="./src/assets/images/heart.png" alt="heart icon" class="recipe-card-heart">
         </div>
         <h2 class="recipe-card-name">${el.name}</h2>
-        <p class="recipe-card-desc">${el.desc || ""}</p>
         <div class="icons">
             <img src="./src/assets/images/user.png" alt="user icon" class="user-icon">
             <span class="recipe-card-serving">${el.servings || 1} people</span>
