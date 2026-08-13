@@ -6,3 +6,4 @@ import "./delete-recipe.js";
 import "./view-all.js";
 import "./view-favs.js";
 import "./filter.js";
+import "./search.js";
