@@ -153,7 +153,7 @@ label[for="filter"] {
 }
 
 .recipe-card {
-    min-width: 300px;
+    width: 350px;
     max-width: 350px;
     background-color: var(--card-color);
     border-radius: var(--medium-radius);
