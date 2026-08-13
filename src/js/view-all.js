@@ -5,3 +5,7 @@ const viewAllBtn = document.getElementById("view-all-btn");
 viewAllBtn?.addEventListener("click", () => {
     renderRecipes(); 
 });
+
+document.getElementById("reset-filter").addEventListener("click", () => {
+    renderRecipes();
+})
