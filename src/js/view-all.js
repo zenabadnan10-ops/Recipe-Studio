@@ -7,5 +7,6 @@ viewAllBtn?.addEventListener("click", () => {
 });
 
 document.getElementById("reset-filter").addEventListener("click", () => {
+    document.getElementById("filter").value = "all";
     renderRecipes();
-})
+});
