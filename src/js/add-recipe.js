@@ -1,3 +1,7 @@
+import heartImg from "./src/assets/images/heart.png";
+import userImg from "./src/assets/images/user.png";
+import trayImg from "./src/assets/images/tray.png";
+
 const recipeGrid = document.getElementById("recipe-grid");
 const recipeDialog = document.getElementById("recipe-dialog");
 const recipeForm = document.getElementById("add-form");
@@ -24,13 +28,13 @@ export const createCard = (el) => {
     article.innerHTML = `
         <div class="recipe-img">
             <img src="${imgUrl}" alt="${el.name}" class="recipe-card-img">
-            <img src="./src/assets/images/heart.png" alt="heart icon" class="recipe-card-heart">
+            <img src="${heartImg}" alt="heart icon" class="recipe-card-heart">
         </div>
         <h2 class="recipe-card-name">${el.name}</h2>
         <div class="icons">
-            <img src="./src/assets/images/user.png" alt="user icon" class="user-icon">
+            <img src="${userImg}" alt="user icon" class="user-icon">
             <span class="recipe-card-serving">${el.servings || 1} people</span>
-            <img src="./src/assets/images/tray.png" alt="tray icon" class="tray-icon">
+            <img src="${trayImg}" alt="tray icon" class="tray-icon">
             <span class="recipe-card-category">${el.category}</span>
         </div>
         <button class="recipe-card-btn" data-id="${el.id}">VIEW RECIPE</button>
