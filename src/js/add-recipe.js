@@ -1,6 +1,6 @@
-const heartImg = "/images/heart.png";
-const userImg = "/images/user.png";
-const trayImg = "/images/tray.png";
+import heartImg from "../assets/images/heart.png";
+import userImg from "../assets/images/user.png";
+import trayImg from "../assets/images/tray.png";
 
 const recipeGrid = document.getElementById("recipe-grid");
 const recipeDialog = document.getElementById("recipe-dialog");
