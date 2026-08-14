@@ -35,7 +35,7 @@ To use Recipe Studio, follow these steps:
 6. Filter recipes by category using the filter dropdown
 7. Search recipes by keyword using the search input
 
-## 📂 Project Structure
+## Project Structure
 ```
 recipe-studio/
 |-- index.html
@@ -67,13 +67,13 @@ recipe-studio/
 |-- README.md
 ```
 
-## 📸 Screenshots
+## Screenshots
 
 ### 3x3 Recipe Cards Grid
-![3x3 Recipe Card Grid](./src/assets/images/screenshots/recipe-grid.png)
+![3x3 Recipe Card Grid](./src/assets/screenshots/recipe-grid.png)
 
 ### Form for Adding Recipes
-![Form for Adding Recipes](./src/assets/images/screenshots/form.png)
+![Form for Adding Recipes](./src/assets/screenshots/form.png)
 
 ### Recipe Details Card
-![Recipe Details Card](./src/assets/images/screenshots/view-card.png)
+![Recipe Details Card](./src/assets/screenshots/view-card.png)
