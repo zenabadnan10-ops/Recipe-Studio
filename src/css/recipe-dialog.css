@@ -93,7 +93,7 @@
     padding-top: 20px;
     padding-left: 30px;
     padding-bottom: 20px;
-    font-size: var(--h1);
+    font-size: var(--h2);
 }
 
 #dialog-recipe-desc-heading {
@@ -146,12 +146,14 @@
     list-style-type: disc; 
     padding-left: 45px; 
     padding-bottom: 20px;
+    padding-right: 10px;
 }
 
 #dialog-recipe-instructions-list {
     list-style-type: decimal; 
     padding-left: 48px;    
     padding-bottom: 20px;
+    padding-right: 10px;
 }
 
 #dialog-recipe-ingredient-list li,

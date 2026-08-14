@@ -233,13 +233,6 @@ label[for="filter"] {
     margin-right: -10px;
 }
 
-.recipe-card-desc {
-    opacity: 88%;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-}
-
 .recipe-card-btn {
     margin-left: 16px;
     margin-bottom: 20px;
@@ -354,7 +347,6 @@ label[for="filter"] {
     padding: 5px 45px;
     padding-left: 10px;
     padding-right: 100px;
-    -moz-appearance: textfield;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
